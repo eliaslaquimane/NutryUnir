@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "NutryUniR",
+    "slug": "dr-quimico",
+    "version": "3.1.1",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "nutryunir",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.dr.laquimane.drquimico",
+      "statusBar": {
+        "translucent": false
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "4b4b02b3-204c-4d23-8de6-2bf909242f58"
+      }
+    }
+  }
+}
