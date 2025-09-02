@@ -1,50 +1,110 @@
-# Welcome to your Expo app 👋
+# NutryUnir 
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+NutryUnir is an AI-powered mobile app that helps users in Mozambique make healthier food choices.
+It combines food chemistry, nutrition, and artificial intelligence to provide insights into natural foods, working both online and offline.
 
-## Get started
+Online: Real-time AI analysis using OpenAI and Foodb.ca data.
 
-1. Install dependencies
+Offline: Access previously scanned foods and educational resources without internet.
 
-   ```bash
-   npm install
-   ```
+✨ Features at a Glance
+Feature	Status	Description
+📷 Image Recognition	✅ Online & Offline	Identify foods via photo; cached offline for repeated access
+🧪 Food Chemistry Insights	✅	Nutrients, bioactive compounds, chemical composition
+📚 Educational Resources	✅ Online available	Learn about nutrition and food chemistry anytime
+🤖 AI Chatbot (OpenAI)	✅ Online	Ask questions and receive personalized dietary guidance
+💾 Offline Storage	✅	Uses AsyncStorage + react-native-storage for local caching
+🌍 Localized Focus	✅	Tailored to Mozambican foods and diets
+🛠️ Tech Stack
 
-2. Start the app
+Framework: React Native (Expo)
 
-   ```bash
-   npx expo start
-   ```
+AI: OpenAI API (chatbot, online), Google Generative AI
 
-In the output, you'll find options to open the app in a
+Food Data: Foodb.ca (online) + local cache for offline use
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Storage: AsyncStorage + react-native-storage
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Navigation: React Navigation (Stack & Bottom Tabs)
 
-## Get a fresh project
+UI/UX: Expo Vector Icons, Linear Gradient, Markdown display
 
-When you're ready, run:
+Language: TypeScript
 
-```bash
-npm run reset-project
-```
+🚀 Getting Started
+1. Clone the repository
+git clone https://github.com/your-username/NutryUnir.git
+cd NutryUnir
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies
+npm install
+# or
+yarn install
 
-## Learn more
+3. Configure API keys
 
-To learn more about developing your project with Expo, look at the following resources:
+Create a .env file in the project root:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+OPENAI_API_KEY=your_openai_api_key
+GOOGLE_GENAI_API_KEY=your_google_genai_key
 
-## Join the community
+4. Start the development server
+npm run start
+# or
+expo start
 
-Join our community of developers creating universal apps.
+📱 Usage
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Open the app on your device (via Expo Go or APK).
+
+Take a photo of a food item.
+
+Online: AI identifies new foods and fetches nutrition data from Foodb.ca.
+
+Offline: Previously scanned foods and educational resources are accessible locally.
+
+Chat with the AI assistant when online.
+
+Data is stored locally for offline use via AsyncStorage + react-native-storage.
+
+📌 Roadmap
+
+ Online food recognition + AI analysis
+
+ Offline caching of scanned foods and nutrition data
+
+ Personalized diet recommendations
+
+ Community food database (user submissions) – planned for next version
+
+🤝 Contributing
+
+We welcome contributions!
+
+Fork the repo
+
+Create a feature branch (git checkout -b feature/amazing-feature)
+
+Commit your changes (git commit -m 'Add some feature')
+
+Push to the branch (git push origin feature/amazing-feature)
+
+Open a Pull Request
+
+Check CONTRIBUTING.md
+ for details.
+
+📄 License
+
+MIT License – see LICENSE
+ for details.
+
+👨‍💻 Authors
+
+Elias Laquimane – Project Lead & Developer
+
+Contributors
+
+⭐ Support
+
+If you find this project helpful, give it a star ⭐ — it helps the project grow and reach more users!
